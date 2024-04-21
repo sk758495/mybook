@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gaming Bro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+     <style>
+        body {
+            background-color: #cbc3c3;
+        }
+        
+        .container {
+            margin-top: 100px;
+            margin-left: 250px;
+            margin-bottom: 50px;
+            width: 70%;
+            border: 1px solid black;
+            display: flex;
+            padding: 20px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        
+        label {
+            display: block;
+        }
+        
+        #design {
+            margin-top: 30px;
+        }
+        
+        .name-a {
+            gap: 20px;
+        }
+        
+        .s-b {
+            border-radius: 5px;
+            font-size: 22px;
+            padding: 5px;
+            width: 500px;
+        }
+        
+        .s-b:hover {
+            background: red;
+            transition: 0s;
+        }
+        
+        .radio {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .checkbox {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .name-a,
+        .email,
+        .phone,
+        .gender-1,
+        .address,
+        .message {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    {% include 'header.html' %}
+    <div class="myform">
+        <h1 style="margin-top: 100px;">FILL THE FORM<span style="color: red;">*</span></h1>
+        <div class="container">
+            <form method="POST" action="{% url 'saveinquiry' %}">
+                {% csrf_token %}
+                <div class="name-a" id="design" style="display: flex;">
+                    <label for="name">Enter Your  Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your  Name" required>                   
+                </div>
+
+                <div class="email" id="design" style="display: flex; gap: 20px;">
+                    <label for="email">Enter Your Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <span id="emailError" style="color: red; display: none;">Invalid email format</span>
+
+                    <label for="phone">Enter Your Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+                </div>             
+
+                <div class="address" id="design2">
+                    <label for="address">Enter Your Address</label>
+                    <input type="text" name="address" id="address" placeholder="Enter Your Address" required>
+                </div>
+
+                <div class="message" id="design">
+                    <label for="message">Enter Your Message</label>
+                    <textarea name="message" id="message" placeholder="Enter Your Message Here" cols="50" rows="5"></textarea>
+                </div>
+                
+                {{ n }}
+                <input type="submit" name="save" class="s-b" id="design" value="Submit">
+                <input type="reset" class="s-b" id="design" value="Reset">
+            </form>
+            
+        </div>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/cursor_effect.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 480">
+  <defs>
+    <style>
+      .cls-1 {
+        mix-blend-mode: overlay;
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 7px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-6 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-2 {
+        stroke: #18263d;
+      }
+
+      .cls-7 {
+        fill: url(#radial-gradient-3);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="-3690.46" cy="-3043.93" fx="-3690.46" fy="-3043.93" r="255.84" gradientTransform="translate(2276.08 4589.33) rotate(27.66) scale(1) skewX(.76)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3dc8ff"/>
+      <stop offset="1" stop-color="#cef1ff"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="-1309.55" cy="4858.84" fx="-1309.55" fy="4858.84" r="34.9" gradientTransform="translate(2480.37 4719.9) rotate(139.91) skewX(-.83)" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-3" cx="421.56" cy="105.23" fx="421.56" fy="105.23" r="361.65" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d53ee5"/>
+      <stop offset="1" stop-color="#2424b5"/>
+    </radialGradient>
+  </defs>
+  <g class="cls-4">
+    <g id="Text">
+      <g>
+        <g>
+          <g>
+            <path class="cls-5" d="m354.92,240.14c-17.72,7.37-36.12,12.08-53.35,13.76-50.24,4.88-99.04-20.78-124.67-64.04-16.98-28.66-29.36-64.41-25.75-98.16,2.39-22.34,12.61-44.36,30.35-57.79s43.31-16.78,62.5-5.5c28.99,17.05,36.65,60.3,67.34,73.92,13.28,5.9,28.52,4.91,42.74,2.18,14.23-2.73,28.24-7.11,42.72-7.68,14.47-.57,30.04,3.33,39.55,14.43,9.47,11.05,11.13,27.43,7.11,41.47-11.48,40.07-48.24,70.64-88.54,87.41Z"/>
+            <ellipse class="cls-6" cx="385.58" cy="57.47" rx="17.61" ry="17.87" transform="translate(-3.31 30.27) rotate(-4.48)"/>
+          </g>
+          <g>
+            <path class="cls-7" d="m365.17,327.55l-77.47-244.08.05.02-5.68-17.74c-.74-2.31-3.18-3.57-5.46-2.82l-199.27,65.65c-2.28.75-3.52,3.23-2.78,5.54l83.59,261.28c.71,2.22,3.06,3.44,5.25,2.72l6.29-2.06,192.69-62.98c2.28-.74,3.53-3.22,2.8-5.53Zm-113.82-137.07l-79.68,26.04c-.57.19-1.18-.13-1.36-.71l-2.48-7.82c-.18-.58.13-1.2.7-1.38l79.68-26.04c.57-.19,1.18.13,1.36.71l2.48,7.82c.18.58-.13,1.2-.7,1.38Zm10.68-31.16l-116.96,38.23c-.57.19-1.18-.13-1.36-.71l-8.63-27.18c-.18-.58.13-1.2.7-1.38l116.96-38.23c.57-.19,1.18.13,1.36.71l8.63,27.18c.18.58-.13,1.2-.7,1.38Z"/>
+            <polyline class="cls-1" points="159.04 344.77 93.69 140.52 132.67 127.68"/>
+            <polygon class="cls-3" points="169.68 396.06 362.37 333.08 169.68 396.06 169.68 396.06"/>
+            <g>
+              <polyline class="cls-2" points="171.43 395.49 366.5 331.73 284.98 74.93"/>
+              <polyline class="cls-2" points="189.52 406.39 386.08 342.15 303.11 80.75"/>
+              <polyline class="cls-2" points="207.62 417.3 405.66 352.57 321.23 86.58"/>
+            </g>
+          </g>
+        </g>
+        <rect class="cls-3" width="480" height="480"/>
+      </g>
+    </g>
+  </g>
+</svg>

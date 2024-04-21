@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>turism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        #design {
+            width: 600px;
+            height: 500px;
+        }
+        
+        .container-z {
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        
+        .card {
+            border-start-end-radius: 50px;
+            border-bottom-left-radius: 50px;
+            box-shadow: 0 0 10px black;
+        }
+        
+        .card-img-top {
+            border-start-end-radius: 50px;
+        }
+        /* -------------------------------  krutant css code start here -------------------------- */
+        
+        .container-1 {
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            position: fixed; 
+            z-index: 1000;           
+            width: 100%;          
+            top: 0px;
+            align-items: center;
+            justify-content: space-evenly;
+            /* Center the content horizontally */
+            margin: 20px 0px 0px -200px;
+            border: none #000;
+            /* Add a border to the container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            /* Add a subtle box shadow */
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .button-1 {
+            margin: 20px;
+            border: none;
+        }
+        
+        button:hover {
+            color: orange;
+        }
+        
+        button {
+            border: none;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            box-shadow: none;
+        }
+        
+        #lang {
+            font-size: 20px;
+        }
+        
+        #lang {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        
+        #guj {
+            border-radius: 40px;
+            width: 70px;
+            height: 70px;
+           
+        }
+        .vertical-divider {
+            height: 40px;
+            /* Set the height of the divider */
+            border-left: 1px solid #000;
+            /* You can customize the border color, style, and width */
+            margin: 0 10px;
+            /* Adjust the margin as needed */
+        }
+        #paragraph {
+            font-size: 16px;
+            font-weight: 900;
+            font-family: sans-serif;
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>  
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="container-1">
+                
+                    <img src="/static/images/sk logo.jpg" style="border-radius: 20px; width: 70px;" alt="logo" class="logo">
+
+                    <hr class="vertical-divider">
+
+                    <a href="{% url 'index' %}"><button class="button-1" id="paragraph">Home</button></a>
+
+               
+                <div class="bar">
+                    <a href="{% url 'login' %}"><button class="button-1" style="margin-left: 100px;" id="paragraph">Log Out</button></a>
+            <a href="{% url 'contact' %}"><button class="button-1" id="paragraph">Contact Us</button></a>
+            <a href="{% url 'contact' %}"><button class="button-1" id="paragraph">About Us</button></a>
+                </div>
+            </div>
+
+
+        </nav>
+
+
+    </div>
+    <!--krutant code end here-->
+
+
+
+    <!--sk code start here-->
+    <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 10px;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/images/kotna.jpg" class="d-block w-100" id="design" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>kotna</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error similique, debitis facere quia illum corporis eaque labore officiis dolorum molestias.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/images/Laxmi Vilas Palace0.jpg" class="d-block w-100" id="design" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Laxmi-Villas Palace</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error similique, debitis facere quia illum corporis eaque labore officiis dolorum molestias.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/static/images/Sindhrot-Dam.jpg" class="d-block w-100" id="design" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Sindhroad</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error similique, debitis facere quia illum corporis eaque labore officiis dolorum molestias.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="/static/images/pavagadh.jpg" class="d-block w-100" id="design" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Pavagadh</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error similique, debitis facere quia illum corporis eaque labore officiis dolorum molestias.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="/static/images/Sayaji-Baug.jpg" class="d-block w-100" id="design" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Sayaji-baug</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error similique, debitis facere quia illum corporis eaque labore officiis dolorum molestias.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="heading">
+        <h1 style="margin-top: 50px;">Most searchable Temple</h1>
+
+    </div>
+
+    <div class="container-z">
+        <div class="card" style="width: 18rem; text-align:center">
+            <img src="/static/images/kuverbhandari.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">kuverbhandari</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">View more...</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; text-align:center">
+            <img src="/static/images/Plc_IskonTemple_1565544725.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">IskonTemple</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">View more...</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; text-align:center">
+            <img src="/static/images/tapovan-temple-1592823.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">tapovan</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">View more...</a>
+            </div>
+        </div>
+    </div>
+    <!--sk code end here-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

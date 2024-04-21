@@ -1,0 +1,271 @@
+body {
+    background: #d1cdcd;
+}
+
+
+/* Style the container */
+
+.container-1 {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 10%;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+    /* Center the content horizontally */
+    border: none #000;
+    /* Add a border to the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    /* Add a subtle box shadow */
+}
+
+#paragraph {
+    font-size: 16px;
+    font-weight: 900;
+    font-family: sans-serif;
+    background: transparent;
+}
+
+#paragraph:hover {
+    color: green;
+}
+
+#paragraph-2 {
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.container-1.hidden {
+    top: -70px;
+    /* Move the navigation bar off-screen when hidden */
+}
+
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 70px;
+}
+
+
+/* Media query for smaller screens */
+
+@media screen and (max-width: 768px) {
+    .col {
+        width: calc(50% - 20px);
+        /* Two columns per row on smaller screens */
+    }
+}
+
+.nav {
+    width: 100%;
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+}
+
+nav span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5%;
+    height: 5%;
+    background-image: linear-gradient(45deg, #4f1919, #ed2d2d);
+    border-radius: 8px;   
+    transition: .5s;
+}
+
+nav a:nth-child(1):hover~span {
+    left: 0px;
+    width: 100px;
+}
+
+nav a:nth-child(2):hover~span {
+    left: 165px;
+    width: 100px;
+}
+
+nav a:nth-child(3):hover~span {
+    left: 375px;
+    width: 130px;
+}
+
+nav a:nth-child(4):hover~span {
+    left: 615px;
+    width: 120px;
+}
+
+nav a:nth-child(5):hover~span {
+    left: 920px;
+    width: 100px;
+}
+
+nav a:nth-child(6):hover~span {
+    left: 1140px;
+    width: 100px;
+}
+
+nav a:nth-child(7):hover~span {
+    left: 1370px;
+    width: 100px;
+}
+
+
+/* Media query for smaller screens */
+
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+    }
+    nav a {
+        padding: 8px;
+        /* Adjust padding for smaller screens */
+    }
+    nav span {
+        display: none;
+        /* Hide the span element on smaller screens */
+    }
+}
+
+
+/* Style the logo */
+
+.logo {
+    text-align: left;
+    /* Adjust the margin as needed */
+}
+
+
+/* Style the vertical divider */
+
+.vertical-divider {
+    height: 40px;
+    /* Set the height of the divider */
+    border-left: 1px solid #000;
+    /* You can customize the border color, style, and width */
+    margin: 0 10px;
+    /* Adjust the margin as needed */
+}
+
+#dropdown {
+    border: none;
+    background-color: none;
+    font-weight: 900;
+}
+
+#dropdown:hover {
+    color: red;
+}
+
+.button-1 {
+    margin: 20px;
+    border: none;
+}
+
+#dropdown {
+    margin: 20px;
+}
+
+.pb {
+    margin-left: 20px;
+    color: #1a1a1a;
+}
+
+.col {
+    max-width: 400px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.container-3 {
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.desc-2 {
+    line-height: 48px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.container-4 {
+    text-align: center;
+}
+
+.heading-1 {
+    font-size: 38px;
+}
+
+.container-5 {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-6 {
+    align-items: center;
+    gap: 50px;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-7 {
+    align-items: center;
+    gap: 50px;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-8 {
+    text-align: center;
+}
+
+
+/* cursor css*/
+
+i {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #0f0;
+    pointer-events: none;
+    animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--x), var(--y));
+    }
+}
+
+

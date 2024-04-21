@@ -1,0 +1,191 @@
+body {
+    background: #d1cdcd;
+}
+
+
+/* Style the container */
+
+.container-1 {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    width: 98%;
+    height: 10%;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+    /* Center the content horizontally */
+    border: none #000;
+    /* Add a border to the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    /* Add a subtle box shadow */
+}
+
+#paragraph {
+    font-size: 16px;
+    font-weight: 900;
+    font-family: sans-serif;
+    background: transparent;
+}
+
+#paragraph:hover {
+    color: green;
+}
+
+#paragraph-2 {
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.container-1.hidden {
+    top: -70px;
+    /* Move the navigation bar off-screen when hidden */
+}
+
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 70px;
+}
+
+.nav {
+    width: 100%;
+    /* Make the navigation bar full width */
+    padding: 10px;
+    /* Add padding for spacing */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+
+/* Style the logo */
+
+.logo {
+    text-align: left;
+    /* Adjust the margin as needed */
+}
+
+
+/* Style the vertical divider */
+
+.vertical-divider {
+    height: 40px;
+    /* Set the height of the divider */
+    border-left: 1px solid #000;
+    /* You can customize the border color, style, and width */
+    margin: 0 10px;
+    /* Adjust the margin as needed */
+}
+
+#dropdown {
+    border: none;
+    background-color: none;
+    font-weight: 900;
+}
+
+#dropdown:hover {
+    color: red;
+}
+
+.button-1 {
+    margin: 20px;
+    border: none;
+}
+
+#dropdown {
+    margin: 20px;
+}
+
+.pb {
+    margin-left: 20px;
+    color: #1a1a1a;
+}
+
+.col {
+    max-width: 400px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.container-3 {
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.desc-2 {
+    line-height: 48px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.container-4 {
+    text-align: center;
+}
+
+.heading-1 {
+    font-size: 38px;
+}
+
+.container-5 {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-6 {
+    align-items: center;
+    gap: 50px;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-7 {
+    align-items: center;
+    gap: 50px;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-8 {
+    text-align: center;
+}
+
+
+/* cursor css*/
+
+i {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #0f0;
+    pointer-events: none;
+    animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--x), var(--y));
+    }
+}

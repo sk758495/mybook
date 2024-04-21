@@ -1,0 +1,54 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gaming Bro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <style>
+    
+/* cursor css*/
+
+i {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #0f0;
+  pointer-events: none;
+  animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+      opacity: 1;
+      transform: translate(0, 0);
+  }
+  100% {
+      opacity: 0;
+      transform: translate(var(--x), var(--y));
+  }
+}
+  </style>
+  <body>
+    <div class="mypractice">
+      {% include 'header.html' %}
+
+
+<h1 style="size: 32px; text-align: center; justify-content: center; margin:150px 00px 50px 0px;">About Us</h1>
+<p style="margin: 0px 100px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, officiis aspernatur. Repudiandae odit saepe beatae et incidunt nihil optio error dolorem rerum debitis tempora eum nostrum excepturi nobis esse id, odio obcaecati? Perferendis nihil magnam architecto soluta non, natus recusandae voluptatum quis quisquam similique iure est, consequatur, iste doloremque commodi. Incidunt aspernatur temporibus deserunt ipsum commodi doloremque soluta dolorum, harum hic voluptate vel repudiandae eveniet facilis non, a autem illo explicabo minus. Unde corporis repellendus facilis odio blanditiis dolorem sunt, saepe possimus tempora quidem minima odit natus numquam minus voluptatum totam! Aut reprehenderit illo doloremque rerum corrupti accusantium perferendis doloribus, distinctio veniam consequatur quod ipsa totam facilis tempora beatae necessitatibus eum dolor similique cupiditate. Reiciendis sed beatae, atque nam vitae maxime nemo, veritatis molestiae corporis vel pariatur, deserunt consequatur quisquam repellat eveniet autem aperiam excepturi necessitatibus. Ex, expedita. Sit quam laudantium dolorem modi dolorum! Exercitationem, unde magni saepe repellendus, mollitia reprehenderit deserunt temporibus ipsam officia soluta, repudiandae sed provident doloribus quia eius. Harum eaque iusto, voluptatibus commodi accusamus illum. Accusantium, praesentium. Ea officiis distinctio incidunt cupiditate impedit. Magnam a recusandae omnis quae id earum sapiente? Quae explicabo nemo pariatur, tempora esse, corporis, qui iure voluptas cupiditate amet illo veritatis ullam. Saepe ex, perspiciatis, rerum quod architecto illo, aliquid labore magni asperiores temporibus molestias esse. Ducimus sint temporibus a iure nostrum quisquam voluptates rem repellat repudiandae facere dignissimos ipsa sed deserunt esse quam vel, fuga optio veritatis. Magni aperiam cumque aut possimus expedita iste, veniam accusamus maxime quasi ipsum quae accusantium consequuntur! Pariatur, qui quis nesciunt provident, omnis temporibus quam iure aperiam aliquam amet repellat recusandae? Beatae magnam nisi sapiente libero dolorem dignissimos quas, inventore ut vero. Quia consequuntur itaque, iste suscipit ipsa tempore fugiat dolores nulla eligendi necessitatibus vel odit rem ratione aperiam ducimus expedita nam architecto eius sequi quo? Consequatur ratione doloribus placeat, dolor totam quae. Corrupti minima impedit nam exercitationem dicta eveniet ad iure quae omnis nobis iste rem pariatur fuga accusamus explicabo similique dolorem reprehenderit, sit neque nihil porro veritatis deserunt! Similique autem quia ex dolores odio pariatur eos nobis odit, eaque laudantium quos ullam optio beatae repudiandae labore tenetur voluptate aut dolor molestiae in molestias vero!</p>
+
+<!--Footer Section-->      
+    </div>
+ 
+
+    {% include 'footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/cursor_effect.js' %}"></script>
+
+
+
+</body>
+</html>

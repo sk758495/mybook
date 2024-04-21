@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gaming Bro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <div class="mypractice">
+    {% include 'header.html' %}
+
+        <div class="container-2" style="margin-top: 100px;">
+            {% for n in item_data %}
+            <div class="col">            
+                <img src="{{ n.item_image.url }}" style="width: 100px; border-radius: 20px;" alt="">
+                <h3 class="desc-2">{{ n.item_title }}</h3>
+                <p id="paragraph">{{ n.item_desc }}</p>
+                <span> <button class="Create Playbook free " style="border-radius: 5px;">Create Playbook free</button>
+                    <button class="Creative? Get qualified for 4TB " style="border-radius: 5px;">Creative? Get qualified for 4TB</button></span>
+            </div>
+            {% endfor %}            
+
+                
+<!--
+            <div class="col">
+                <h3 class="desc-2">Make your creativity<br> work beauuutiful.</h3>
+                <p id="paragraph">Organize, share, and collaborate on creative files and<br> projects with your clients and team.</p>
+                <span> <button class="Create Playbook free " style="border-radius: 5px;">Create Playbook free</button>
+                <button class="Creative? Get qualified for 4TB " style="border-radius: 5px;">Creative? Get qualified for 4TB</button></span>
+            </div>
+
+            <div class="col">
+                <h3 class="desc-2">Make your creativity<br> work beauuutiful.</h3>
+                <p id="paragraph">Organize, share, and collaborate on creative files and<br> projects with your clients and team.</p>
+                <span> <button class="Create Playbook free " style="border-radius: 5px;">Create Playbook free</button>
+                <button class="Creative? Get qualified for 4TB " style="border-radius: 5px;">Creative? Get qualified for 4TB</button></span>
+            </div>
+-->
+
+        </div>
+
+        <!-- Divider between containers -->
+        <hr class="container-divider">
+
+        <div class="container-3" id="item_details">
+            <h3 class="desc-2">"We had our Dropbox of thousands of files<br> decluttered almost immediately."</h3>
+            <p id="paragraph">Jenna Moeller, Art Director, Literati</p>
+        </div>
+
+        <!-- Divider between containers -->
+        <hr class="container-divider">
+
+        <div class="container-4">
+            <h6 class="heading-1">TRUSTED BY TEAMS AND DESIGNERS FROM</h6>
+            <div class="image-1">
+                <img src="/static/images/198fb24c-15f1-47f9-ae0c-8b81591a7b32" style="width: 250px; height: 50px; margin-right: 10px; margin-left: 10px;" alt="">
+                <img src="/static/images/8ae4d37a-f084-43d7-8f77-2174d0ed4b43" style="width: 250px;height: 40px; margin-right: 10px; margin-left: 10px;" alt="">
+                <img src="/static/images/9840b1b7-1154-4560-97eb-9b2191a4d45b" style="width: 250px;height: 35px; margin-right: 10px; margin-left: 10px;" alt="">
+                <img src="/static/images/bunglow-name.png" style="width: 250px; height: 30px; margin-right: 10px; margin-left: 10px;" alt="">
+            </div>
+
+            <div class="image-2" style="margin-top: 50px;">
+                <img src="/static/images/concept.png" style="width: 150px; height: 50px; margin-right: 20px; margin-left: 20px;" alt="">
+                <img src="/static/images/dear.png" style="width: 100px; height: 60px; margin-right: 20px; margin-left: 20px;" alt="">
+                <img src="/static/images/farmsted.png" style="width: 150px; height: 60px; margin-left: 20px; margin-right: 20px;" alt="">
+                <img src="/static/images/literati.png" style="width: 150px; height: 60px; margin-left: 20px; margin-right: 20px;" alt="">
+                <img src="/static/images/bunglow-name.png" style="width: 250px; height: 30px; margin-right: 10px; margin-left: 10px;" alt="">
+                <img src="/static/images/folx.png" style="width: 150px; height: 60px; margin-left: 20px; margin-right: 20px;" alt="">
+            </div>
+        </div>
+
+        <!-- Divider between containers -->
+        <hr class="container-divider">
+        
+        {% for m in item_details_data %} 
+        <div class="container-5">
+            <div class="desc-3" style="margin:0px 100px;">
+                <h3 class="desc-2">{{ m.item_details_title }}</h3>
+                <p id="paragraph-2">{{ m.item_details_desc }}</p>
+            </div>
+            <div class="images-4">
+                <img src="{{ m.item_details_images.url }}" style="width: 600px; margin: 0px 100px; border-radius: 50px;" alt="">
+            </div>
+        </div>
+        {% endfor %}
+
+        
+        <hr class="container-divider">
+
+        <div class="container-6">
+            {% for y in item_details1_data %}
+            <div class="images-4">
+                <img src="{{ y.item_details1_images.url }}" style="width: 600px; border-radius: 50px; margin:0px 100px;" alt="">
+            </div>
+            <div class="desc-3" style="margin:0px 100px;">
+                <h3 class="desc-2">{{ y.item_details1_title }}</h3>
+                <p id="paragraph-2">{{ y.item_details1_desc }}</p>
+            </div>
+            {% endfor %}
+        </div>
+       
+        <hr class="container-divider">
+<!--
+        <div class="container-7">
+            <div class="desc-3" style="margin-left: 200px;">
+                <h3 class="desc-2">Professionally share your work</h3>
+                <p id="paragraph-2">Publish a beautiful gallery for your team or clients to<br>and comments.</p>
+            </div>
+            <div class="images-4">
+                <img src="/static/images/photography.png" style="width: 600px;" alt="">
+            </div>
+        </div>
+        -->
+
+        <!-- Divider between containers -->
+        <hr class="container-divider">
+<!--
+        <div class="container-8">
+            <h2 class="heading-1">The new generation of folders and files</h2>
+            <p id="desc-2">Try Playbook for yourself, then add your whole team.</p>
+            <button style="background-color: red; border:none;border-radius: 10px;  font-size: 22px; padding: 20px;">Create Playbook free</button>
+        </div>
+-->
+      </div>
+        <!-- Divider between containers -->
+        <hr class="container-divider-1">
+
+        <!--Footer Section-->
+ {% include 'footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
