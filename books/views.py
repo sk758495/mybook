@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Book
 
 def add_book(request):
@@ -22,3 +22,10 @@ def add_book(request):
         )
         return redirect('index')  # Redirect to a success page
     return render(request, 'create_book.html')
+
+def delete_book(request, pk):
+    book = get_object_or_404(Book, pk=pk)
+    if request.method == 'POST':
+        book.delete()
+        return redirect('index')  # Redirect to a success page
+    return render(request, 'delete_book.html', {'book': book})

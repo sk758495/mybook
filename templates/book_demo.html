@@ -136,7 +136,9 @@
         </div>
     </div>
 
-    
+    <div class="delete-button">
+        <a href="{% url 'delete_book' pk=book.pk %}" style="margin-left: 100px; font-size: 20px;"><button style="border: none; background:none; box-shadow:0 0 10px black; border-radius: 5px;">Delete</button></a>
+    </div>
 
     {% endfor %}
    
